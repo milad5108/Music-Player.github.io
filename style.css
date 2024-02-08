@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #eaeaea;
+  overflow-y: hidden;
+}
+
+.container {
+  width: 300px;
+  height: 70%;
+  margin-top: 50px;
+  background-color: #efeded;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px #c9c2c2, -7px -7px 10px #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  width: 200px;
+  height: 300px;
+  transform: translateY(-15%);
+}
+
+.container.move1 .image-container {
+  animation: move1 1s;
+}
+.container.move2 .image-container {
+  animation: move2 1s;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateY(-15%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(-15%);
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: translateY(-15%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(-15%);
+  }
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 15px 15px;
+  box-shadow: 5px 5px 6px #d0cdcd, -5px -5px 6px #ffffff;
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: space-between;
+}
+
+.music-container h3 {
+  text-shadow: 2px 2px 3px #898686, -5px -5px 6px #e1dede;
+}
+
+.progress-container {
+  height: 5px;
+  width: 200px;
+  border-radius: 7px;
+  background-color: #a9a8a8;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.progress-container .progress {
+  width: 0;
+  height: 5px;
+  background-color: #000;
+  border-radius: 7px;
+}
+
+.navigation {
+  padding-bottom: 25px;
+}
+
+.navigation button {
+  cursor: pointer;
+  border: none;
+  outline: 0;
+}
+
+.navigation button .playBtn {
+  background-color: #efeded;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  box-shadow: 3px 3px 6px #b6b4b4, -3px -3px 6px #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.navigation button .playBtn:active {
+  background-color: #fff;
+}

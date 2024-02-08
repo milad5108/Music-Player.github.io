@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <h1>Music Player</h1>
+    
+    <div class="container">
+      <div class="image-container">
+        <img class="image" src="images/Shadmehr Aghili - Bi Ehsas.jpg" alt="" />
+      </div>
+
+      <div class="music-container">
+        <div class="music-info">
+          <h3 class="music-name">Shadmehr Aghili - Bi Ehsas</h3>
+          <p>Milad Sarhadbani</p>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <audio class="audio" src="music/Shadmehr Aghili - Bi Ehsas.mp3"></audio>
+
+        <div class="navigation">
+          <button class="prev"><i class="fa-solid fa-backward"></i></button>
+          <button class="play"><i class="fa-solid fa-play playBtn"></i></button>
+          <button class="next"><i class="fa-solid fa-forward"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
